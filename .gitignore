@@ -10,9 +10,3 @@ poetry.lock
 
 # gradio
 flagged
-
-# example
-*.wav
-*.ogg
-*.json
-*.tja
