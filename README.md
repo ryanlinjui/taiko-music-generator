@@ -22,7 +22,23 @@ https://github.com/user-attachments/assets/d4c202a1-d9d1-4323-96f5-c8848f5d1185
   - 連打/秒 (DrumRoll hits per second)
 - [x] **Adjustable Volume**: Modify the volume for individual taiko notes or entire songs.
 - [x] **Example Music**: Preloaded sample .tja files and songs to help you get started quickly.
-- [x] **Stereo Support**: Background music with multiple channels now plays at the correct speed.
+
+# Getting Started
+### Setup
+Use [poetry](https://github.com/python-poetry/poetry) to set up the development environment:
+
+```bash
+poetry shell
+poetry install
+```
+
+> You might need to use [pyenv](https://github.com/pyenv/pyenv) to create a Python virtual environment. Currently, the project is using Python 3.10 or above.
+
+### Run the App
+
+```bash
+python app.py
+```
 
 # FAQ
 ### What is `.tja` file?  
