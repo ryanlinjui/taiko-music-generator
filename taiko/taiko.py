@@ -73,6 +73,17 @@ def adjust_audio_cached(file_path: str, target_duration: float, target_amplitude
     
     return audio
 
+def read_tja(path: str) -> str:
+    for enc in ("utf-8", "cp932", "shift_jis", "euc_jp"):
+        try:
+            with open(path, "r", encoding=enc) as f:
+                return f.read()
+        except UnicodeDecodeError:
+            continue
+
+    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+        return f.read()
+
 class TaikoMusic:
     def __init__(self):
         # Input filepath
@@ -101,7 +112,7 @@ class TaikoMusic:
 
     def generate_taiko_music(self) -> CourseMusic:
         with open(self.tja_file, "r", encoding="utf-8") as f:
-            tja_content = f.read()
+            tja_content = read_tja(self.tja_file)
 
         parsed_tja = parse_tja(tja_content)        
         music = CourseMusic()
