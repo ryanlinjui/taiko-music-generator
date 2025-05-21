@@ -246,5 +246,8 @@ class TaikoMusic:
         for attr in ("ura", "oni", "hard", "normal", "easy"):
             segment = getattr(music, attr)
             if isinstance(segment, AudioSegment):
-                setattr(music, attr, (segment.frame_rate, np.array(segment.get_array_of_samples())))
+                array = np.array(segment.get_array_of_samples())
+                if segment.channels > 1:
+                    array = array.reshape((-1, segment.channels))
+                setattr(music, attr, (segment.frame_rate, array))
         return music

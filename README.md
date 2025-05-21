@@ -22,6 +22,7 @@ https://github.com/user-attachments/assets/d4c202a1-d9d1-4323-96f5-c8848f5d1185
   - 連打/秒 (DrumRoll hits per second)
 - [x] **Adjustable Volume**: Modify the volume for individual taiko notes or entire songs.
 - [x] **Example Music**: Preloaded sample .tja files and songs to help you get started quickly.
+- [x] **Stereo Support**: Background music with multiple channels now plays at the correct speed.
 
 # FAQ
 ### What is `.tja` file?  
