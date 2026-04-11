@@ -18,9 +18,9 @@ def UserInterface(event_handler: callable) -> gr.Interface:
     with gr.Blocks(delete_cache=(86400, 86400)) as gradio_interface:
         gr.HTML(f"""
         <blockquote>
-            <p><a href="{SOURCE_CODE_GH_URL}"><img src="{BADGE_URL}" alt="GitHub Code"/></a></p>
-            <p>For Neokent NTNU CP2, click <a href="https://huggingface.co/spaces/ryanlinjui/ntnucp2-taiko-music-generator">here</a></p>
-            <p>Verify tja format by <a href="https://whmhammer.github.io/tja-tools/">TJA Tools</a></p>
+            <p><a href="{SOURCE_CODE_GH_URL}" target="_blank" rel="noopener noreferrer"><img src="{BADGE_URL}" alt="GitHub Code"/></a></p>
+            <p>For Neokent NTNU CP2, click <a href="https://huggingface.co/spaces/ryanlinjui/ntnucp2-taiko-music-generator" target="_blank" rel="noopener noreferrer">here</a></p>
+            <p>Verify tja format by <a href="https://whmhammer.github.io/tja-tools/" target="_blank" rel="noopener noreferrer">TJA Tools</a></p>
         </blockquote>
         """)
         gr.Markdown("# 太鼓の達人音楽ジェネレーター (Taiko Music Generator)")

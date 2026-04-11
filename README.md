@@ -1,16 +1,3 @@
----
-title: Taiko Music Generator
-emoji: 💻
-colorFrom: red
-colorTo: red
-sdk: gradio
-short_description: Input your .tja file to convert Taiko Music.
-tags:
-- taiko-no-tatsujin
-- tja
-license: mit
----
-
 # Taiko Music Generator
 
 **Mix sougs and [太鼓の達人 (Taiko no Tatsujin)](https://taiko.namco-ch.net/taiko/en/) drum sounds to generate Taiko Music.**
